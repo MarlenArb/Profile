@@ -18,7 +18,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'home/#:href', component: HomeComponent}
 ]
 
 @NgModule({
@@ -28,7 +29,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { useHash: true }), 
     BrowserAnimationsModule,
     MatSidenavModule,
     MatFormFieldModule,
