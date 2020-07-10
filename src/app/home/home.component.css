@@ -14,7 +14,7 @@ a:hover{
   color: black !important;
 }
 
-li:hover{
+#nav > li:hover{
   background-color: rgba(0, 0, 0, 0.18);
 
 }

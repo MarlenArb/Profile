@@ -24,7 +24,7 @@
       </mat-radio-group>
     </p>
 
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" id="nav">
       <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fas fa-user"></i> &nbsp; Sobre mí</a>
       </li>
@@ -32,7 +32,7 @@
         <a class="nav-link" href="#estudios"><i class="fas fa-user-graduate"></i> &nbsp; Estudios</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fas fa-book"></i> &nbsp; Formación Adicional</a>
+        <a class="nav-link" href="#for_adicional"><i class="fas fa-book"></i> &nbsp; Formación Adicional</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fas fa-comments"></i> &nbsp; Idiomas</a>
@@ -61,10 +61,46 @@
     </p>
 
     <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+
+    <div class="container-lg">
+
+      <div id="estudios">
+        <h2 class="mb-2"><i class="fas fa-user-graduate"></i> &nbsp; Estudios</h2>
+        <h3>GRADO EN INGENIERÍA ELECTRÓNICA INDUSTRIAL Y AUTOMÁTICA</h3>
+        <h4>Universidad de La Laguna (ULL)</h4>
+        <h5>2015-2019</h5>
+        <p>
+          La carrera, entre otros, me aportó conocimientos en ingeniería eléctrica, electrónica de
+          potencia, analógica y digital, instrumentación electrónica y programación de autómatas, en
+          especial tipo Siemens Simatic.
+        </p>
+      </div>
+
+      <div id="for_adicional">
+        <h2 class="mb-2"><i class="fas fa-book"></i> &nbsp; Formación Adicional</h2>
+        <h3>CURSO DE PROGRAMACIÓN Y DISEÑO WEB FRONT-END</h3>
+        <h4>Escuela de Organización Industrial (EOI)</h4>
+        <h5>02/2020-05/2020. Horas lectivas: 355 h</h5>
+        
+          <span>Contenido:</span>
+          <ul>
+            <li>Front-end (HTML5 / CSS3 avanzado, Flexbox, Grid CSS, PostCSS, etc…).</li>
+            <li>JavaScript (fundamentos de programación, ECMAScript, ES Modules…)</li>
+            <li>Framework SPA (Vue.js, SFC, Tooling, Vuex, etc…)</li>
+            <li>Especialización Diseño (Responsive Design, Metodologías CSS, Frameworks CSS, …)</li>
+            <li>Especialización Front-end (Animaciones, librerías gráficas, SVG, APIs nativas de
+              JavaScript, etc…)</li>
+          </ul>
+        
+      </div>
+
+
+    </div>
+
+    
   </mat-sidenav-content>
 
-  <h2 id="estudios">Estudios</h2>
-  <p></p>
+ 
 
 </mat-sidenav-container>
 
