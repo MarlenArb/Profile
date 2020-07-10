@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import {MediaMatcher} from '@angular/cdk/layout';
+import {ChangeDetectorRef, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -16,4 +18,6 @@ export class HomeComponent implements OnInit {
   mode = new FormControl('over');
  /*  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host)); */
  shouldRun = true;
+
+ fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 }

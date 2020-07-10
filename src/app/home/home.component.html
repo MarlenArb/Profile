@@ -1,4 +1,18 @@
-<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+<!--Header-->
+<nav class="navbar fixed-top" style="background-color: lavenderblush;">
+  <i class="fas fa-bars" style="cursor: pointer;"></i>
+  <span class="navbar-brand mb-0 h1">Marlen Arbelo</span>
+</nav>
+
+<div style="height: 55.6px;"></div>
+<!--SideNav-->
+
+
+<div class="example-container"  *ngIf="shouldRun">
+
+  
+<mat-sidenav-container class="example-container" *ngIf="shouldRun" style="height: 100% !important;">
+
   <mat-sidenav #sidenav [mode]="mode.value">
     <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
     <p>
@@ -23,5 +37,7 @@
     </p>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+</div>
 
 <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>

@@ -11,6 +11,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 const routes: Routes = [
@@ -32,7 +35,10 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
