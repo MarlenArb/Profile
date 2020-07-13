@@ -30,3 +30,11 @@ a:hover{
   scroll-padding-top: 20px !important;
   scroll-behavior: smooth !important;
 }
+
+#experiencia > ul, #contacto > ul{
+  list-style-type: none;
+}
+
+ul{
+  list-style-type: "❥ ";
+}
