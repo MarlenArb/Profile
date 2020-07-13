@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 html, body { 
   height: 100%;
@@ -13,7 +15,7 @@ body {
 
 .title{
   /*font-family: 'EB Garamond', serif;*/
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif !important;
   font-weight: 800;
 
 }
@@ -22,4 +24,29 @@ body {
   background: lavenderblush !important;
   font-family: 'Merriweather', serif !important;
   text-align: center !important;
+}
+
+h2{
+  color: black !important;
+}
+
+h3{
+  font-weight: 700 !important;
+  font-style: italic;
+  font-family: 'Merriweather', serif !;
+}
+
+h4{
+  font-weight: 400 !important;
+  font-family: 'Merriweather', serif !;
+}
+
+h5{
+  font-weight: 400 !important;
+  font-family: 'Merriweather', serif !;
+}
+
+.font-light{
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'PT Serif', serif;
 }
