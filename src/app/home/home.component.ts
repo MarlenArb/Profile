@@ -20,4 +20,5 @@ export class HomeComponent implements OnInit {
  shouldRun = true;
 
  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+
 }
